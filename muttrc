@@ -1,25 +1,25 @@
-set imap_user = "CABLE\DDevot200"
+set imap_user = "USER"
 set imap_pass = "PASSWORD"
 #set smtp_url = "smtp://127.0.0.1:1025"
 #set smtp_pass = "PASSWORD"
-set from = "Dinesh_Devotta@cable.comcast.com"
-set realname = "Dinesh Devotta"
+set from = "EMAIL"
+set realname = "NAME"
 
 set sendmail="/usr/local/Cellar/msmtp/1.4.31/bin/msmtp"
-my_hdr From: "Dinesh Devotta"
+my_hdr From: "NAME"
 # Change the following line to a different editor you prefer.
 set editor = "vim"
 
 # Basic config, you can leave this as is
-set folder = "imap://DDevot200:PASSWORD@127.0.0.1:1143"
-set spoolfile = "imap://DDevot200:PASSWORD@127.0.0.1:1143/Inbox"
+set folder = "imap://USER:PASSWORD@127.0.0.1:1143"
+set spoolfile = "imap://USER:PASSWORD@127.0.0.1:1143/Inbox"
 set imap_check_subscribed
 #set hostname = localhost
 set mail_check = 120
 set timeout = 300
 set imap_keepalive = 300
-#set postponed = "+[Comcast]/Drafts"
-#set record = "+[Comcast]/Sent Mail"
+#set postponed = "+[ACCOUNT]/Drafts"
+#set record = "+[ACCOUNT]/Sent Mail"
 set header_cache=~/.mutt/cache/headers
 set message_cachedir=~/.mutt/cache/bodies
 set certificate_file=~/.mutt/certificates
